@@ -112,15 +112,15 @@
 &trans             &trans             &trans            &trans            &trans  &trans  &trans  &trans  &trans     &trans     &trans    &trans
             >;
         };
-  
+
         hotkey {
             bindings = <
 &trans    &trans     &trans     &trans   &trans                  &trans  &trans    &kp LC(LA(LS(DOWN)))  &kp LC(LA(LS(UP)))  &trans
 &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans                  &trans  &kp LEFT  &kp DOWN              &kp UP              &kp RIGHT
-&trans    &trans     &trans     &trans   &trans  &trans  &trans  &trans  &kp DEL   &kp BSPC              &trans              &trans
+&trans    &trans     &trans     &trans   &trans  &trans  &trans  &trans  &kp BSPC  &kp DEL               &trans              &trans
 &trans    &trans     &trans     &trans   &trans  &trans  &trans  &trans  &trans    &trans                &trans              &trans
             >;
-        };  
+        };
 
         function {
             bindings = <
