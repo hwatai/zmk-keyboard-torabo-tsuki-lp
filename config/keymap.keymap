@@ -109,8 +109,8 @@
 &kp JP_EXCL &kp JP_DQT &kp JP_HASH &kp JP_DLLR &kp JP_PRCNT                  &kp JP_AMPS &kp JP_SQT &kp JP_LPAR &kp JP_RPAR &trans
 &kp N1      &kp N2     &kp N3      &kp N4      &kp N5                        &kp N6      &kp N7     &kp N8      &kp N9      &kp N0
 &trans      &trans     &trans      &trans      &trans                        &trans      &trans     &trans      &trans      &trans
-&trans      &trans     &trans      &trans      &trans  &kp LSHFT  &kp RSHFT  &trans      &trans     &trans      &trans      &trans
-&trans      &trans     &trans      &trans      &trans  &trans     &trans     &trans      &trans     &trans      &trans      &trans
+&trans      &trans     &trans      &trans      &trans        &trans  &trans  &trans      &trans     &trans      &trans      &trans
+&trans      &trans     &trans      &trans      &trans        &trans  &trans  &trans      &trans     &trans      &trans      &trans
             >;
         };
 
@@ -134,10 +134,10 @@
 
         hotkey {
             bindings = <
-&trans    &trans     &trans     &trans   &trans                  &trans    &trans    &trans                &trans              &trans
-&kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans                  &trans    &kp LEFT  &kp DOWN              &kp UP              &kp RIGHT
-&trans    &trans     &trans     &trans   &trans  &trans  &trans  &kp BSPC  &kp DEL   &kp LC(LA(LS(DOWN)))  &kp LC(LA(LS(UP)))  &trans
-&trans    &trans     &trans     &trans   &trans  &trans  &trans  &trans    &trans    &trans                &trans              &trans
+&trans    &trans     &trans     &trans   &trans                  &trans  &trans    &trans    &trans                &trans
+&kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans                  &trans  &kp LEFT  &kp DOWN  &kp UP                &kp RIGHT
+&trans    &trans     &trans     &trans   &trans  &trans  &trans  &trans  &kp BSPC  &kp DEL   &kp LC(LA(LS(DOWN)))  &kp LC(LA(LS(UP)))
+&trans    &trans     &trans     &trans   &trans  &trans  &trans  &trans  &trans    &trans    &trans                &trans
             >;
         };
      };
