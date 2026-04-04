@@ -106,7 +106,7 @@
                                                                                                                                                                             //
 &kp F1        &kp F2        &kp F3        &kp F4         &kp F5                                      &trans       &kp C_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &trans
 &kp F6        &kp F7        &kp F8        &kp F9         &kp F10                                     &trans       &kp LS(WIN_L)  &kp LS(WIN_R)  &kp LS(LG(S))  &trans
-&kp F11       &kp F12       &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &trans         &trans         &trans       &kp WIN_L      &kp WIN_R      &trans         &trans
+&kp F11       &kp F12       &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &trans         &trans         &trans       &kp WIN_L      &kp WIN_R      &kp JP_CAPS    &trans
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;}; number {bindings = <
                                                                                                                                                                             //
 &kp JP_EXCL   &kp JP_DQT    &kp JP_HASH   &kp JP_DLLR    &kp JP_PRCNT                                &kp JP_AMPS  &kp JP_SQT     &kp JP_LPAR    &kp JP_RPAR    &trans
