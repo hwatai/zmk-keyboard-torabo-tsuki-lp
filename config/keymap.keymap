@@ -58,33 +58,34 @@
     combos {
         compatible = "zmk,combos";
 
-        // A + S = DOWN SCROLL
-        down_scroll {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&msc MOVE_Y(-300)>;
-        };
 
-        // D + F = UP SCROLL
-        up_scroll {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&msc MOVE_Y(300)>;
-        };
-
-        // J + K = L Click
-        l_click {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&mkp LCLK>;
-        };
-
-        // L + - = R Click
-        r_click {
-            timeout-ms = <50>;
-            key-positions = <18 19>;
-            bindings = <&mkp RCLK>;
-        };
+//        // A + S = DOWN SCROLL
+//        down_scroll {
+//            timeout-ms = <50>;
+//            key-positions = <10 11>;
+//            bindings = <&msc MOVE_Y(-300)>;
+//        };
+//
+//        // D + F = UP SCROLL
+//        up_scroll {
+//            timeout-ms = <50>;
+//            key-positions = <12 13>;
+//            bindings = <&msc MOVE_Y(300)>;
+//        };
+//
+//        // J + K = L Click
+//        l_click {
+//            timeout-ms = <50>;
+//            key-positions = <16 17>;
+//            bindings = <&mkp LCLK>;
+//        };
+//
+//        // L + - = R Click
+//        r_click {
+//            timeout-ms = <50>;
+//            key-positions = <18 19>;
+//            bindings = <&mkp RCLK>;
+//        };
 
         // Bluetooth Clear (combo for layer 3)
         bt_clear {
