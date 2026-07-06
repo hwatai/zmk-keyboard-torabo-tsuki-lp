@@ -71,7 +71,7 @@
         };
         rs: rs {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>; 
+            #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             flavor = "balanced";
@@ -111,14 +111,14 @@
 
         base {bindings = <
 &kp Q         &kp W         &kp E         &kp R          &kp T                                       &kp Y        &kp U          &kp I          &kp O          &kp P
-&kp A         &kp S         &kp D         &kp F          &kp G                                       &kp H        &kp J          &kp K          &kp L          &kp JP_MINUS
-&ls LSHFT Z   &kp X         &kp C         &kp V          &kp B         &kp TAB        &kp ESC        &kp N        &kp M          &kp JP_COMMA   &kp JP_DOT     &kp JP_SLASH
-&kp LCTRL     &kp LWIN      &kp LALT      &mo 5          &lt 4 SPACE   &lt 3 LANG_JP  &lt 2 LANG_EN  &lt 1 ENTER  &none          &none          &kp JP_BSLH    &kp RSHFT    >;};
+&kp A         &kp S         &kp D         &kp F          &kp G                                       &kp H        &kp J          &kp K          &kp L          &lt 1 JP_MINUS
+&ls LSHFT Z   &kp X         &kp C         &kp V          &kp B         &kp TAB        &kp ESC        &kp N        &kp M          &kp JP_COMMA   &kp JP_DOT     &kt JP_SLASH
+&kp LCTRL     &kp LWIN      &kp LALT      &mo 4          &kt SPACE     &lt 3 LANG_JP  &lt 2 LANG_EN  &lt 5 ENTER  &none          &none          &kp JP_BSLH    &kp RSHFT    >;};
 
 mouse {bindings = <
-&trans        &trans        &trans        &trans         &trans                                      &trans       &mkp MB4       &mkp MB5       &trans         &trans
-&msc SC_LEFT  &msc SC_DOWN  &msc SC_UP    &msc SC_RIGHT  &mkp MCLK                                   &trans       &mkp LCLK      &mkp RCLK      &trans         &trans
-&trans        &trans        &trans        &trans         &trans        &trans         &trans         &mkp MCLK    &msc SC_LEFT   &msc SC_DOWN   &msc SC_UP     &msc SC_RIGHT
+&kp WIN_L     &kp WIN_D     &kp WIN_U     &kp WIN_R      &kp MOVE_WIN                                &trans       &mkp MB4       &mkp MB5       &trans         &trans
+&msc SC_LEFT  &msc SC_DOWN  &msc SC_UP    &msc SC_RIGHT  &mkp MCLK                                   &trans       &mkp LCLK      &mkp MCLK      &mkp RCLK      &trans
+&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
 
 number {bindings = <
@@ -129,19 +129,19 @@ number {bindings = <
 
 symbol {bindings = <
 &trans        &kp JP_EQUAL  &kp JP_TILDE  &kp JP_PIPE    &trans                                      &trans       &kp JP_MINUS   &kp JP_CARET   &kp JP_YEN     &trans
-&trans        &trans        &kp JP_GRAVE  &kp JP_LBRC    &trans                                      &trans       &trans         &kp JP_AT      &kp JP_LBKT    &trans
+&trans        &trans        &kp JP_GRAVE  &kp JP_LBRC    &trans                                      &trans       &trans         &kp JP_AT      &kp JP_LBKT    &kp RSHFT
 &trans        &kp JP_PLUS   &kp JP_ASTRK  &kp JP_RBRC    &trans        &trans         &trans         &trans       &kp JP_SEMI    &kp JP_COLON   &kp JP_RBKT    &kp RSHFT
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
 
 hotkey {bindings = <
 &trans        &trans        &trans        &trans         &trans                                      &trans       &trans         &kp MULCR_DN   &kp MULCR_UP   &trans
 &kp HOME      &kp PG_DN     &kp PG_UP     &kp END        &trans                                      &trans       &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
-&kp WIN_L     &kp WIN_D     &kp WIN_U     &kp WIN_R      &kp MOVE_WIN  &trans         &trans         &trans       &kp BSPC       &kp DEL        &trans         &trans
+&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &kp BSPC       &kp DEL        &trans         &trans
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
 
 function {bindings = <
 &kp F1        &kp F2        &kp F3        &kp F4         &kp F5                                      &trans       &kp C_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &trans
-&kp F6        &kp F7        &kp F8        &kp F9         &kp F10                                     &trans       &kp PRTSC      &trans         &trans         &kp JP_CAPS
+&kp F6        &kp F7        &kp F8        &kp F9         &kp F10                                     &trans       &trans         &trans         &kp PRTSC      &kp JP_CAPS
 &kp F11       &kp F12       &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &trans         &trans         &trans       &trans         &trans         &trans         &trans
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
     };
