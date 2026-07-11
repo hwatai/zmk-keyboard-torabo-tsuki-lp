@@ -163,9 +163,6 @@ coding {bindings = <
 &kp JP_LPAR   &kp JP_LBKT   &kp JP_LBRC   &kp JP_LT      &trans                                      &trans       &kp JP_RT     &kp JP_RBRC   &kp JP_RBKT   &kp JP_RPAR
 &kp JP_EQUAL  &kp JP_UNDER  &kp JP_COLON  &kp JP_PLUS    &trans                                      &trans       &kp JP_MINUS  &kp JP_ASTRK  &kp JP_SLASH  &kp JP_AT
 &kp JP_DOT    &kp JP_COMMA  &kp JP_SQT    &kp JP_DQT     &trans        &trans         &trans         &trans       &kp JP_SEMI   &kp JP_PIPE   &kp JP_AMPS   &kp JP_BSLH
-&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans        &trans        &trans        &trans
->; };
-
-
+&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans        &trans        &trans        &trans          >;};
     };
 };
