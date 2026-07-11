@@ -142,9 +142,9 @@ number {bindings = <
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &kp N0         &trans       >;};
 
 symbol {bindings = <
-&kp JP_LPAR   &kp JP_LBKT   &kp JP_LBRC   &kp JP_LT      &kt JP_DQT                                  &kt JP_SQT   &kp JP_RT      &kp JP_RBRC    &kp JP_RBKT    &kp JP_RPAR
-&kp JP_HASH   &kp JP_UNDER  &kp JP_SLASH  &kp JP_MINUS   &kt JP_PRCNT                                &kt JP_GRAVE &kp JP_PLUS    &kp JP_ASTRK   &kp JP_EQUAL   &kp JP_AT
-&kp JP_PIPE   &kp JP_EXCL   &kp JP_TILDE  &kp JP_SEMI    &kt JP_YEN    &trans         &trans         &kt JP_DLLR  &kp JP_COLON   &kp JP_CARET   &kp JP_AMPS    &kp JP_BSLH
+&kp JP_LPAR   &kp JP_LBKT   &kp JP_LBRC   &kp JP_LT      &kp JP_DQT                                  &kp JP_SQT   &kp JP_RT      &kp JP_RBRC    &kp JP_RBKT    &kp JP_RPAR
+&kp JP_HASH   &kp JP_UNDER  &kp JP_SLASH  &kp JP_MINUS   &kp JP_PRCNT                                &kp JP_GRAVE &kp JP_PLUS    &kp JP_ASTRK   &kp JP_EQUAL   &kp JP_AT
+&kp JP_PIPE   &kp JP_EXCL   &kp JP_TILDE  &kp JP_SEMI    &kp JP_YEN    &trans         &trans         &kp JP_DLLR  &kp JP_COLON   &kp JP_CARET   &kp JP_AMPS    &kp JP_BSLH
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
 
 hotkey {bindings = <
