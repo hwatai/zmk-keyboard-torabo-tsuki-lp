@@ -127,24 +127,24 @@
 &kp Q         &kp W         &kp E         &kp R          &kp T                                       &kp Y        &kp U          &kp I          &kp O          &kp P
 &kp A         &kp S         &kp D         &kp F          &kp G                                       &kp H        &kp J          &kp K          &kp L          &lt 1 JP_MINUS
 &ls LSHFT Z   &kp X         &kp C         &kp V          &kp B         &kp TAB        &kp ESC        &kp N        &kp M          &kp JP_COMMA   &kp JP_DOT     &kp JP_SLASH
-&kp LCTRL     &kp LWIN      &kp LALT      &mo 6          &lt 4 SPACE   &lt 3 LANG_JP  &lt 2 LANG_EN  &lt 5 ENTER  &none          &none          &kp JP_BSLH    &kp RSHFT    >;};
+&kp LCTRL     &kp LWIN      &kp LALT      &mo 3          &lt 4 SPACE   &lt 3 LANG_JP  &lt 2 LANG_EN  &lt 5 ENTER  &none          &none          &kp JP_BSLH    &kp RSHFT    >;};
 
 mouse {bindings = <
-&kp WIN_L     &kp WIN_D     &kp WIN_U     &kp WIN_R      &kp MOVE_WIN                                &trans       &mkp MB4       &mkp MB5       &trans         &trans
-&trans        &trans        &trans        &trans         &trans                                      &trans       &mkp LCLK      &mkp MCLK      &mkp RCLK      &trans
+&trans        &trans        &trans        &trans         &trans                                      &trans       &mkp MB4       &mkp MB5       &trans         &trans
+&msc SC_LEFT  &msc SC_DOWN  &msc SC_UP    &msc SC_RIGHT  &trans                                      &trans       &mkp LCLK      &mkp MCLK      &mkp RCLK      &trans
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &msc SC_LEFT &msc SC_DOWN   &msc SC_UP     &msc SC_RIGHT  &trans
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
 
 number {bindings = <
-&kp JP_EXCL   &kp JP_DQT    &kp JP_HASH   &kp JP_DLLR    &kp JP_PRCNT                                &kp JP_AMPS  &kp JP_SQT     &kp JP_LPAR    &kp JP_RPAR    &trans
-&kp N1        &kp N2        &kp N3        &kp N4         &kp N5                                      &kp N6       &kp N7         &kp N8         &kp N9         &kp N0
-&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans
-&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
+&trans        &trans        &trans        &trans         &trans                                      &trans       &trans         &kp N1         &kp N2         &kp N3
+&trans        &trans        &trans        &trans         &trans                                      &trans       &trans         &kp N4         &kp N5         &kp N6
+&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &kp N7         &kp N8         &kp N9
+&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &kp N0         &trans       >;};
 
 symbol {bindings = <
-&trans        &kp JP_EQUAL  &kp JP_TILDE  &kp JP_PIPE    &trans                                      &trans       &kp JP_MINUS   &kp JP_CARET   &kp JP_YEN     &trans
-&trans        &trans        &kp JP_GRAVE  &kp JP_LBRC    &trans                                      &trans       &trans         &kp JP_AT      &kp JP_LBKT    &kp RSHFT
-&trans        &kp JP_PLUS   &kp JP_ASTRK  &kp JP_RBRC    &trans        &trans         &trans         &trans       &kp JP_SEMI    &kp JP_COLON   &kp JP_RBKT    &kp RSHFT
+&kp JP_LPAR   &kp JP_LBKT   &kp JP_LBRC   &kp JP_LT      &kt JP_DQT                                  &kt JP_SQT   &kp JP_RT      &kp JP_RBRC    &kp JP_RBKT    &kp JP_RPAR
+&kp JP_HASH   &kp JP_UNDER  &kp JP_SLASH  &kp JP_MINUS   &kt JP_PRCNT                                &kt JP_GRAVE &kp JP_PLUS    &kp JP_ASTRK   &kp JP_EQUAL   &kp JP_AT
+&kp JP_PIPE   &kp JP_EXCL   &kp JP_TILDE  &kp JP_SEMI    &kt JP_YEN    &trans         &trans         &kt JP_DLLR  &kp JP_COLON   &kp JP_CARET   &kp JP_AMPS    &kp JP_BSLH
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
 
 hotkey {bindings = <
@@ -154,15 +154,21 @@ hotkey {bindings = <
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
 
 function {bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4         &kp F5                                      &trans       &kp C_MUTE     &kp C_VOL_DN   &kp C_VOL_UP   &trans
-&kp F6        &kp F7        &kp F8        &kp F9         &kp F10                                     &trans       &trans         &trans         &kp PRTSC      &kp JP_CAPS
-&kp F11       &kp F12       &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &trans         &trans         &trans       &trans         &trans         &trans         &trans
+&kp F1        &kp F2        &kp F3        &kp F4         &kp F5                                      &trans       &trans         &trans         &kp PRTSC      &kp JP_CAPS
+&kp F6        &kp F7        &kp F8        &kp F9         &kp F10                                     &trans       &kp WIN_L      &kp WIN_D      &kp WIN_U      &kp WIN_R
+&kp F11       &kp F12       &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &trans         &trans         &trans       &kp MOVE_WIN   &trans         &trans         &trans
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
-
-coding {bindings = <
-&kp JP_LPAR   &kp JP_LBKT   &kp JP_LBRC   &kp JP_LT      &trans                                      &trans       &kp JP_RT     &kp JP_RBRC   &kp JP_RBKT   &kp JP_RPAR
-&kp JP_EQUAL  &kp JP_UNDER  &kp JP_COLON  &kp JP_PLUS    &trans                                      &trans       &kp JP_MINUS  &kp JP_ASTRK  &kp JP_SLASH  &kp JP_AT
-&kp JP_DOT    &kp JP_COMMA  &kp JP_SQT    &kp JP_DQT     &trans        &trans         &trans         &trans       &kp JP_SEMI   &kp JP_PIPE   &kp JP_AMPS   &kp JP_BSLH
-&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans        &trans        &trans        &trans          >;};
     };
 };
+
+// number {bindings = <
+// &kp JP_EXCL   &kp JP_DQT    &kp JP_HASH   &kp JP_DLLR    &kp JP_PRCNT                                &kp JP_AMPS  &kp JP_SQT     &kp JP_LPAR    &kp JP_RPAR    &trans
+// &kp N1        &kp N2        &kp N3        &kp N4         &kp N5                                      &kp N6       &kp N7         &kp N8         &kp N9         &kp N0
+// &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans
+// &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
+// 
+// symbol {bindings = <
+// &trans        &kp JP_EQUAL  &kp JP_TILDE  &kp JP_PIPE    &trans                                      &trans       &kp JP_MINUS   &kp JP_CARET   &kp JP_YEN     &trans
+// &trans        &trans        &kp JP_GRAVE  &kp JP_LBRC    &trans                                      &trans       &trans         &kp JP_AT      &kp JP_LBKT    &kp RSHFT
+// &trans        &kp JP_PLUS   &kp JP_ASTRK  &kp JP_RBRC    &trans        &trans         &trans         &trans       &kp JP_SEMI    &kp JP_COLON   &kp JP_RBKT    &kp RSHFT
+// &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
