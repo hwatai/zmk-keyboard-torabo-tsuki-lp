@@ -83,19 +83,33 @@
     combos {
         compatible = "zmk,combos";
 
-        // L click
-        l_click {
+//        left_finger_12 {
+//            timeout-ms = <50>;
+//            require-prior-idle-ms = <125>;
+//            key-positions = <13 12>;
+//            bindings = <&tog 1>;
+//        };
+//
+//        left_finger_34 {
+//            timeout-ms = <50>;
+//            require-prior-idle-ms = <125>;
+//            key-positions = <10 11>;
+//            bindings = <&tog 1>;
+//        };
+
+        right_finger_12 {
             timeout-ms = <50>;
+            require-prior-idle-ms = <125>;
             key-positions = <16 17>;
-            bindings = <&mkp LCLK>;
+            bindings = <&tog 1>;
         };
 
-        // R click
-        r_click {
-            timeout-ms = <50>;
-            key-positions = <18 19>;
-            bindings = <&mkp RCLK>;
-        };
+//        right_finger_34 {
+//            timeout-ms = <50>;
+//            require-prior-idle-ms = <125>;
+//            key-positions = <18 19>;
+//            bindings = <&tog 1>;
+//        };
 
         // Bluetooth Clear
         bt_clear {
@@ -111,14 +125,14 @@
 
         base {bindings = <
 &kp Q         &kp W         &kp E         &kp R          &kp T                                       &kp Y        &kp U          &kp I          &kp O          &kp P
-&kp A         &kp S         &kp D         &kp F          &kp G                                       &kp H        &kp J          &kp K          &kp L          &lt 1 JP_MINUS
+&kp A         &kp S         &kp D         &kp F          &kp G                                       &kp H        &kp J          &kp K          &kp L          &kp JP_MINUS
 &ls LSHFT Z   &kp X         &kp C         &kp V          &kp B         &kp TAB        &kp ESC        &kp N        &kp M          &kp JP_COMMA   &kp JP_DOT     &kp JP_SLASH
-&kp LCTRL     &kp LWIN      &kp LALT      &mo 4          &lt 4 SPACE   &lt 3 LANG_JP  &lt 2 LANG_EN  &lt 5 ENTER  &none          &none          &kp JP_BSLH    &kp RSHFT    >;};
+&kp LCTRL     &kp LWIN      &kp LALT      &mo 6          &lt 4 SPACE   &lt 3 LANG_JP  &lt 2 LANG_EN  &lt 5 ENTER  &none          &none          &kp JP_BSLH    &kp RSHFT    >;};
 
 mouse {bindings = <
 &kp WIN_L     &kp WIN_D     &kp WIN_U     &kp WIN_R      &kp MOVE_WIN                                &trans       &mkp MB4       &mkp MB5       &trans         &trans
-&msc SC_LEFT  &msc SC_DOWN  &msc SC_UP    &msc SC_RIGHT  &mkp MCLK                                   &trans       &mkp LCLK      &mkp MCLK      &mkp RCLK      &trans
-&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans
+&trans        &trans        &trans        &trans         &trans                                      &trans       &mkp LCLK      &mkp MCLK      &mkp RCLK      &trans
+&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &msc SC_LEFT   &msc SC_DOWN   &msc SC_UP     &msc SC_RIGHT
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
 
 number {bindings = <
@@ -144,5 +158,14 @@ function {bindings = <
 &kp F6        &kp F7        &kp F8        &kp F9         &kp F10                                     &trans       &trans         &trans         &kp PRTSC      &kp JP_CAPS
 &kp F11       &kp F12       &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2  &trans         &trans         &trans       &trans         &trans         &trans         &trans
 &trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans         &trans         &trans         &trans       >;};
+
+coding {bindings = <
+&kp JP_LPAR   &kp JP_LBKT   &kp JP_LBRC   &kp JP_LT      &trans                                      &trans       &kp JP_RT     &kp JP_RBRC   &kp JP_RBKT   &kp JP_RPAR
+&kp JP_EQUAL  &kp JP_UNDER  &kp JP_COLON  &kp JP_PLUS    &trans                                      &trans       &kp JP_MINUS  &kp JP_ASTRK  &kp JP_SLASH  &kp JP_AT
+&kp JP_DOT    &kp JP_COMMA  &kp JP_SQT    &kp JP_DQT     &trans        &trans         &trans         &trans       &kp JP_SEMI   &kp JP_PIPE   &kp JP_AMPS   &kp JP_BSLH
+&trans        &trans        &trans        &trans         &trans        &trans         &trans         &trans       &trans        &trans        &trans        &trans
+>; };
+
+
     };
 };
